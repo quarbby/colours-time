@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        div {
+            margin: auto;
+            margin-top: -70px;
+            position: absolute;
+            top: 40%;
+            width: 100%;
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            top: 50%;
+        }
+        
+        .text {
+            color: #eee9e9;
+        }
+    
+        #time {
+            font-size: 80px;
+            color: #faebd7;            
+        }
+        
+        #colour {
+            text-align: center;
+            font-size: 50px;
+            color: #faebd7;
+        }
+        
+        #country2 {
+            margin: auto;
+            position: absolute;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        
+        p {
+            text-align: center;
+            color: #faebd7;
+        }
+        
+    </style>
+    
+	<head>
+		<title>What Colour is the Time</title>
+
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	   
+	    <link href='//fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> 
+
+        <script src="js/time.js"></script>
+        <script src="js/countries.js"></script>
+
+	</head>
+	
+	<body>
+	    <div>
+            <h1 class="text">What Colour is the Time</h1>
+            <select id="country2" name="country2" onchange="countryChanged()"></select>
+            <h1 id="time"></h1>
+            <h2 id="colour"></h2>
+            <p>Note: Timezones may not be accurate.</p>
+	    </div>
+    
+    </body>
+
+</html>

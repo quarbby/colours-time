@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .container {
+            margin: auto;
+            margin-top: -70px;
+            margin-left: 30%;
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            border: none;
+            color: #faebd7;
+        }
+    
+        div {
+            border: 1px solid #eee9e9;
+            margin: 10px;
+        }
+        
+        .text {
+            color: #eee9e9;
+        }
+        
+        h1 {
+            padding-left: 20px;
+            margin-left: 20%;
+        }
+        
+        h2 {
+            padding-left: 20px;
+            margin-left: 20%;
+        }
+        
+        #title {
+            font-size: 70px;
+        }
+        
+        h3 {
+            margin-left: 40%;           
+        }
+        
+        #weather {
+            font-size: 20px;
+        }
+        
+    </style>
+    
+	<head>
+		<title>What Colour is it Today</title>
+
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	   
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.1.min.js"></script> 
+	    <script type="text/javascript" src="js/colourmixer.js"></script>
+	    <script type="text/javascript" src="js/jquerycolor.js"></script>
+	    <script type="text/javascript" src="js/jquery.simpleWeather.min.js"></script>
+	    
+	    <link href='//fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> 
+
+        <script type="text/javascript" src="js/main.js"></script>
+        
+
+	</head>
+	
+	<body>	    
+	    <h1 class="text" id="title">What Colour is it Today?</h1>
+	    <h3 class="text">Singapore, Singapore</h3>
+
+	    <div class="container">
+    	    <div id="timeBox">
+                <h1 class="text">Time</h1>
+                <h1 id="time"></h1>
+                <h2 id="timeColour"></h2>
+    	    </div>
+    	    
+    	    <div id="dateBox">
+                <h1 class="text">Date</h1>
+                <h1 id="date"></h1>
+                <h2 id="dateColour"></h2>
+    	    </div>	    
+        
+    	    <div id="weatherBox">
+                <h1 class="text">Weather</h1>
+                <h1 id="weather"></h1>
+                <h2 id="weatherColour"></h2>
+    	    </div>    
+        </div>
+    </body>
+
+</html>
