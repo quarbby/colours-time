@@ -34,11 +34,16 @@
         }
         
         h3 {
-            margin-left: 40%;           
+            margin-left: 25%;          
         }
         
         #weather {
             font-size: 14px;
+        }
+        
+        #country2 {
+            margin-left: 35%;
+            margin-bottom: 10px;
         }
         
     </style>
@@ -58,13 +63,14 @@
 	    <link href='//fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> 
 
         <script type="text/javascript" src="js/main.js"></script>
-        
+        <script type="text/javascript" src="js/countries.js"></script>
 
 	</head>
 	
 	<body>	    
 	    <h1 class="text" id="title">What Colour is it Today?</h1>
-	    <h3 class="text">Singapore, Singapore</h3>
+        <select id="country2" name="country2" onchange="countryChanged()"></select>
+        <h3 class="text">Note: Timezones & Weather Information may not be accurate</h3>
 
 	    <div class="container">
     	    <div id="timeBox">
@@ -85,6 +91,7 @@
                 <h2 id="weatherColour"></h2>
     	    </div>    
         </div>
+        
     </body>
 
 </html>
