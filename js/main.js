@@ -58,7 +58,7 @@ function updateClock() {
     var destoffset = timezone_arr[val-1];
     
     offset = destoffset-localoffset-1;
-    console.log("Local Offset: " + localoffset + " Dest Offset: " + destoffset + " offset: " + offset);
+    //console.log("Local Offset: " + localoffset + " Dest Offset: " + destoffset + " offset: " + offset);
     
     now = new Date(utc + (3600000*offset));
     
@@ -69,9 +69,9 @@ function updateClock() {
     timeColElement.innerHTML = timeColour
     timeBox.style.backgroundColor = timeColour;
     
-    date = ('0' + now.getDay()).slice(-2) + ' ' + ('0' + now.getMonth()).slice(-2) + ' ' + (''+now.getFullYear()).slice(2);
+    date = ('0' + now.getDate()).slice(-2) + ' ' + ('0' + now.getMonth()+1).slice(-2) + ' ' + (''+now.getFullYear()).slice(2);
     dateColour = '#' + date.replace(/\s/g, '');
-    
+
     dateElement.innerHTML = date;
     dateColElement.innerHTML = dateColour;
     dateBox.style.backgroundColor = dateColour;
@@ -114,6 +114,7 @@ function setBackgroundColour() {
     var colors = new Array($.Color(timeColour), $.Color(dateColour), $.Color(weatherColour));
 
     var result_color = Color_mixer.mix(colors);
+    //console.log(result_color);
     
     document.body.style.backgroundColor = result_color;
 }
