@@ -61,7 +61,7 @@ function updateClock() {
     //console.log("Local Offset: " + localoffset + " Dest Offset: " + destoffset + " offset: " + offset);
     
     now = new Date(utc + (3600000*offset));
-    
+
     time = ('0' + now.getHours()).slice(-2) + ':' + ('0' + now.getMinutes()).slice(-2) + ':' + ('0' + now.getSeconds()).slice(-2);
     timeColour = '#' + time.replace(/:/g, '');
     
@@ -69,7 +69,7 @@ function updateClock() {
     timeColElement.innerHTML = timeColour
     timeBox.style.backgroundColor = timeColour;
     
-    date = ('0' + now.getDate()).slice(-2) + ' ' + ('0' + now.getMonth()+1).slice(-2) + ' ' + (''+now.getFullYear()).slice(2);
+    date = ('0' + now.getDate()).slice(-2) + ' ' + ('0' + (now.getMonth()+1)).slice(-2) + ' ' + (''+now.getFullYear()).slice(2);
     dateColour = '#' + date.replace(/\s/g, '');
 
     dateElement.innerHTML = date;
