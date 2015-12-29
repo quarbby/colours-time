@@ -1,3 +1,4 @@
 # What Colour Is It Today
 
-http://quarbby.github.io/colours-time/
+Background changes colour with hex code of date and time.
+Now with simple weather conditions.
