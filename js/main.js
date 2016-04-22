@@ -79,8 +79,7 @@ function updateClock() {
     
     $.simpleWeather({
         zipcode: '',
-        woeid: '',   //Singapore woeid: 1062617
-        location: countryLoc,
+        woeid: '1062617',   //Singapore woeid: 1062617
         unit: 'c',
         success: function (weather) {
             var temp = weather.temp;
