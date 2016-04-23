@@ -1,6 +1,6 @@
 # What Colour Is It Today
 
-![screenshot](img/second.png)
+![screenshot](img/third.png)
 
 ### References
 * [AndreasSoiron Color Mixer](https://github.com/AndreasSoiron/Color_mixer)
