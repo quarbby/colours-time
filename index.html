@@ -1,52 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        .container {
-            margin-left: 25%;
-            position: absolute;
-            width: 50%;
-            border: none;
-            color: #faebd7;
-            font-size: 15px;
-        }
-    
-        div {
-            border: 1px solid #eee9e9;
-            padding-right: 10px;
-            padding-bottom: 50px;
-        }
-        
-        .text {
-            color: #eee9e9;
-        }
-        
-        h1 {
-            padding-left: 20px;
-        }
-        
-        h2 {
-            float: right;
-        }
-        
-        #title {
-            font-size: 50px;
-            margin-left: 25%;
-        }
-        
-        h3 {
-            margin-left: 25%;          
-        }
-        
-        #weather {
-            font-size: 14px;
-        }
-        
-        #country2 {
-            margin-left: 35%;
-            margin-bottom: 10px;
-        }
-        
-    </style>
     
 	<head>
 		<title>What Colour is it Today</title>
@@ -58,20 +11,34 @@
 	    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.1.min.js"></script> 
 	    <script type="text/javascript" src="js/colourmixer.js"></script>
 	    <script type="text/javascript" src="js/jquerycolor.js"></script>
-	    <script type="text/javascript" src="js/jquery.simpleWeather.min.js"></script>
-	    
-	    <link href='//fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> 
 
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	    <link href='//fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/countries.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 	</head>
 	
 	<body>	    
-	    <h1 class="text" id="title">What Colour is it Today?</h1>
-        <select id="country2" name="country2" onchange="countryChanged()"></select>
-        <h3 class="text">Note: Timezones & Weather Information may not be accurate
-        <br> <a href="https://github.com/quarbby/colours-time">View on Github :)</a>
+	    <header>
+	       <h1 class="text" id="title">What Colour is it Today?</h1>
+            <div class="container">
+                <p class="pull-left">Left</p>
+                <p class="pull-right">Right</p>
+            </div>
+	    </header>
+	    
+	    <div class="container">
+	       <!--<select id="country2" name="country2" onchange="countryChanged()"></select>-->
+	       <select id="countryList" name="countryList" onchange="countryChanged()"></select>
+           <h3 class="js-geolocation">Use My Location</h3>
+	    </div>
+
+        <h3> <a href="https://github.com/quarbby/colours-time">View on Github :)</a>
         </h3>
 
 	    <div class="container">
