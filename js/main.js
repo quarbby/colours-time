@@ -157,7 +157,7 @@ function updateClock() {
                 weatherString += "<br>" + weather;
                 weatherElement.innerHTML = weatherString;
                 
-                weatherColour = '#' + temp + humidity + ('' + windSpeed.replace('.', '')).slice(0,2);
+                weatherColour = '#' + temp.slice(0,2) + humidity.slice(0,2) + ('' + windSpeed.replace('.', '')).slice(0,2);
                 weatherColElement.innerHTML = weatherColour;
     
                 },
