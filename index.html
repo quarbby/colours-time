@@ -17,8 +17,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/countries.js"></script>
-        
+
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 	</head>
@@ -26,35 +25,39 @@
 	<body>	    
 	    <header>
 	       <h1 class="text" id="title">What Colour is it Today?</h1>
-            <div class="container">
-                <p class="pull-left">Left</p>
-                <p class="pull-right">Right</p>
-            </div>
 	    </header>
-	    
-	    <div class="container">
-	       <!--<select id="country2" name="country2" onchange="countryChanged()"></select>-->
-	       <select id="countryList" name="countryList" onchange="countryChanged()"></select>
-           <h3 class="js-geolocation">Use My Location</h3>
-	    </div>
 
-        <h3> <a href="https://github.com/quarbby/colours-time">View on Github :)</a>
-        </h3>
+        <div class="container">	       
+            <select class="pull-left" id="countryList" name="countryList" onchange="countryChanged()"></select>
+        </div>
+
+        <div class="container">
+            <h3 class="text js-geolocation pull-left">Use My Location</h3>
+            <h3 class="pull-right" id="github-view"><a href="https://github.com/quarbby/colours-time">View on Github</a>
+                <img src="img/githublogo2.png" width="20" height="20"></h3>            
+        </div>
+
+
+        <div class="container">
+            <iframe src="https://ghbtns.com/github-btn.html?user=quarbby&repo=colours-time&type=star&count=true&size=small" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=quarbby&repo=colours-time&type=fork&count=true&size=small" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=quarbby&type=follow&count=true&size=small" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>        
+        </div>
 
 	    <div class="container">
-    	    <div id="timeBox">
+    	    <div id="timeBox" class="elements-box">
                 <h1 class="text">Time</h1>
                 <h1 id="time"></h1>
                 <h2 id="timeColour"></h2>
     	    </div>
     	    
-    	    <div id="dateBox">
+    	    <div id="dateBox" class="elements-box">
                 <h1 class="text">Date</h1>
                 <h1 id="date"></h1>
                 <h2 id="dateColour"></h2>
     	    </div>	    
         
-    	    <div id="weatherBox">
+    	    <div id="weatherBox" class="elements-box">
                 <h1 class="text">Weather</h1>
                 <h1 id="weather"></h1>
                 <h2 id="weatherColour"></h2>

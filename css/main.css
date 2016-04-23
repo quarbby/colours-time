@@ -1,6 +1,5 @@
 .container {
     margin-left: 25%;
-    position: absolute;
     width: 50%;
     border: none;
     color: #faebd7;
@@ -10,11 +9,15 @@
 div {
     border: 1px solid #eee9e9;
     padding-right: 10px;
+}
+
+.elements-box { 
     padding-bottom: 50px;
 }
 
 .text {
     color: #eee9e9;
+    font-size: 25px;
 }
 
 h1 {
@@ -30,20 +33,26 @@ h2 {
     margin-left: 25%;
 }
 
-h3 {
-    margin-left: 25%;          
-}
-
 #weather {
     font-size: 14px;
 }
 
-#country2 {
-    margin-left: 35%;
+#countryList {
     margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer; cursor: hand;
 }
 
-#countryList {
-    margin-left: 35%;
-    margin-bottom: 10px;
+.js-geolocation {
+  color: #000000;
+  background: rgba(255,255,255,0.80);
+  padding: 3px;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  cursor: pointer; cursor: hand;
+}
+
+#github-view {
+    font-size: 18px;
 }

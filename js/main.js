@@ -62,6 +62,16 @@ window.onload = function(e) {
     } else {
       $('.js-geolocation').hide();
     }
+    
+    $('.js-geolocation').on('click', function() {
+        console.log("Hello!");
+      navigator.geolocation.getCurrentPosition(function(position) {
+        latitude = position.coords.latitude;
+        longitude = position.coords.longitude;
+        locationOfUser = latitude + ',' + longitude;
+        geolocation = true;
+      });
+    });
 
     locationOfUser = countriesData[val].latlong;
     
